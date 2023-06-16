@@ -19,7 +19,7 @@ Follow the steps below to set up and run the Exoplanet Catalog application.
 
 Clone the repository to your local machine:
 
-git clone https://github.com/your-username/exoplanet-catalog.git
+git clone https://github.com/kishore-munusamy/exoplanet-catalog.git
 
 ### 2. Build the Project
 Navigate to the project directory and build the project using Maven:
