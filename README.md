@@ -24,15 +24,15 @@ git clone https://github.com/kishore-munusamy/exoplanet-catalog.git
 ### 2. Build the Project
 Navigate to the project directory and build the project using Maven:
 
-cd exoplanet-catalog
-mvn clean install
+- cd exoplanet-catalog
+- mvn clean install
 
 This command compiles the source code, runs tests, and creates an executable JAR file.
 
 ### 3. Run the Application
 To run the application, use the following command:
 
-java -jar target/exoplanet-catalog-1.0-SNAPSHOT.jar
+- java -jar target/exoplanet-catalog-1.0-SNAPSHOT.jar
 
 The application will start and be accessible at http://localhost:8080.
 
@@ -50,7 +50,7 @@ You can access these endpoints by making HTTP requests to the appropriate URLs.
 ### 5. Execute Tests
 You can execute the tests using the following command:
 
-mvn clean test
+- mvn clean test
 
 This command will run all the unit tests in the project.
 
@@ -59,13 +59,13 @@ To containerize the application with Docker, make sure Docker is installed on yo
 
 Build the Docker image using the provided Dockerfile:
 
-mvn clean install
+- mvn clean install
 
 This command will build a Docker image tagged as kishoremunusamy6011/exoplanet-catalog:LATEST.
 
 Run the Docker container:
 
-docker run -p 8080:8080 kishoremunusamy6011/exoplanet-catalog:LATEST
+- docker run -p 8080:8080 kishoremunusamy6011/exoplanet-catalog:LATEST
 
 The application will be accessible at http://localhost:8080, running inside the Docker container.
 
