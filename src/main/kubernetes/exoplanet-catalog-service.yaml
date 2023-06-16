@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: exoplanet-catalog-service
+  namespace: exoplanet-catalog
+spec:
+  selector:
+    app: exoplanet-catalog
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer

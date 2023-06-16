@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exoplanet-catalog-deployment
+  namespace: exoplanet-catalog
+  labels:
+    app: exoplanet-catalog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: exoplanet-catalog
+  template:
+    metadata:
+      labels:
+        app: exoplanet-catalog
+    spec:
+      containers:
+        - name: exoplanet-catalog
+          image: kishoremunusamy6011/exoplanet-catalog:LATEST
+          ports:
+            - containerPort: 8080
